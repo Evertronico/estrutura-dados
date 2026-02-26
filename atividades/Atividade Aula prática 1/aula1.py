@@ -21,7 +21,7 @@ media = calcular_media(notas)
 maior_nota = encontrar_maior(notas)
 menor_nota = encontrar_menor(notas)
 
-print("\n--- Resumo das Informações ---")
+print("------")
 print("Alunos registrados:", nomes)
 print("Média da turma:", media)
 print("Maior nota registrada:", maior_nota)

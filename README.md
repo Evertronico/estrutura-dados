@@ -1,3 +1,12 @@
+Problema
+Desenvolver um sistema que permita:
+Inserir produtos em uma lista.
+Remover produtos pelo nome.
+Listar todos os produtos.
+Calcular o valor total do estoque.
+Cada produto deve ser representado por um dicionário com nome, quantidade e preço.
+
+
 Atividade Aula prática 4:
 Exercício 4.1
 Crie uma função que receba um número e retorne seu quadrado.

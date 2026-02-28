@@ -1,0 +1,16 @@
+import random
+
+def gerar_lista_20_numeros():
+    lista = []
+    for i in range(20):
+        numero = random.randint(1, 100)
+        lista.append(numero)
+
+    lista_pares = [num for num in lista if num % 2 == 0]
+
+    print("Lista original:", lista)
+    print("Números pares:", lista_pares)
+
+    return lista, lista_pares
+
+gerar_lista_20_numeros()

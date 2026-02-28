@@ -1,4 +1,3 @@
-# Declaro as listas para armazenar os nomes dos alunos e suas notas
 Aluno = [] # Lista para armazenar os nomes dos alunos
 Nota = [] # Lista para armazenar as notas dos alunos
 

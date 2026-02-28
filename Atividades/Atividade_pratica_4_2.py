@@ -11,6 +11,6 @@ def principal ():
      else:
           media = "reprovado"
 
-     print(f"O aluno(a) {aluno} do curso de {curso} esta {media}")
+     print(f"O aluno {aluno} do curso de {curso} esta {media}")
 
 principal()

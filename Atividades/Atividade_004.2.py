@@ -1,4 +1,5 @@
 '''
+--problema na importação
 Atividade Aula prática 4:
     Exercício 4.2
     Crie uma função que receba nome, curso e duas notas e retorne uma mensagem formatada

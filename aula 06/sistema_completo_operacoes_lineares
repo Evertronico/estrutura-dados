@@ -1,0 +1,14 @@
+from insercao_posicao_especifica import inserir_posicao
+from remocao_manual_por_indice import remover_posicao
+
+def exibir(lista):
+    for i in range(len(lista)):
+        print(f"Posição {i}: {lista[i]}")
+
+numeros = [1, 2, 3, 4, 5]
+
+inserir_posicao(numeros, 99, 3)
+remover_posicao(numeros, 1)
+
+print("Após operações:")
+exibir(numeros)

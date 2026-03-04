@@ -15,64 +15,74 @@
 
     Cada produto deve ser representado por um dicionário com nome, quantidade e preço.'
 '''
-estoque = []
+'''
+    ATIVIDADE prática - Mão na massa
 
-def inserir():
-    inserir = {}
-    print('=' * 50)
-    print('INICIANDO CADASTRO DE PRODUTOS')
-    inserir['nome']   = input('Nome--------------------------: ')
-    inserir['qtd']    = int(input('Quantidade----------------: '))
-    inserir['preco']  = float(input('Preço-------------------: '))
+    Problema
 
-    estoque.append(inserir.copy)
-    print('=' * 50)
-    print('Cadastro feito com sucesso!👍😁👍')
-    print('=' * 50)
+    Desenvolver um sistema que permita:
 
-# OPÇÕES
-def opcoes ():
-    while True:
-        print('=' * 50)
-        print('||    <<<<<<<<<<<<MENU DE OPÇÕES>>:>>>>>>>>>    ||')
-        print('||    1) -INSERIR PRODUTOS.................:    ||')
-        print('||    2) -REMOVER PRODUTOS NOME............:    ||')
-        print('||    3) -LISTAR PRODUTOS..................:    ||')
-        print('||    4) -CALCULAR ESTOQUE.................:    ||')
-        print('=' * 50)
+    1 - Inserir produtos em uma lista.
 
-        opcaoP = int(input('Informe a opção desejada: '))
-        if   opcaoP == 1:
-            inserir()
-        elif opcaoP == 2:
-            remover()
-        elif opcaoP == 3:
-            listar()
-        elif opcaoP == 4:
-            calcular()
-        elif opcaoP == 5:
-            print('Saindo...')
-            break
-        else:
-            print('Opção inválida. Tente novamente')
+    2 - Remover produtos pelo nome.
+
+    3 - Listar todos os produtos.
+
+    4 - Calcular o valor total do estoque.
+
+    Cada produto deve ser representado por um dicionário com nome, quantidade e preço.'
+'''
+
+produtos = []  
+
+def inserir(nome, quantidade, preco):
+    if quantidade < 0 or preco <= 0:
+        raise ValueError("Valores invalidos")
+    produto = {"nome": nome, "quantidade": quantidade, "preco": preco}
+    produtos.append(produto)
+
+def remover(nome):
+    for p in produtos:
+        if p["nome"].lower() == nome.lower(): # converter maiúsculos em minúsculos
+            produtos.remove(p)
+            return True
+    else:
+        return False
 
 def listar():
-    print('Listagem de Funcionários')
-    for produtos in estoque:
-        print(produtos)
+    return produtos[:]
 
+def calcular_total():
+    return sum(p["quantidade"] * p["preco"] for p in produtos)
 
-# funçao remover
-def remover():
-    if estoque == 0:
-        print('Não foi possivel remover\n Tente novamente.')
+while True:
+    print('=' * 50)
+    print('||    <<<<<<<<<<<<MENU DE OPÇÕES>>:>>>>>>>>>    ||')
+    print('||    1) -INSERIR PRODUTO..................:    ||')
+    print('||    2) -REMOVER PRODUTO..................:    ||')
+    print('||    3) -LISTAR  PRODUTO..................:    ||')
+    print('||    4) -TOTAL   PRODUTO..................:    ||')
+    print('||    5) -SAIR.............................:    ||')
+    print('=' * 50)
+
+    opcaoP = input("- ")
+    print("-"*50)
+    if opcaoP == "1":
+        nome = input("Nome: ")
+        qtd = int(input("Quantidade: "))
+        preco = float(input("Preço: "))
+        inserir(nome, qtd, preco)
+    elif opcaoP == "2":
+        nome = input("Nome: ")
+        remover(nome)
+    elif opcaoP == "3":
+        for p in listar():
+            print(p)
+    elif opcaoP == "4":
+        print(calcular_total())
+    elif opcaoP == "5":
+            print('Saindo...')
+            break
     else:
-        for i in estoque:
-            del estoque[i]
-    return print('PRODUTO REMOVIDO COM SUCESSO👍')
+            print('Opção inválida. Tente novamente')
 
-# função calcular
-def calcular():
-    return print('EM ANALISE')
-
-opcoes()

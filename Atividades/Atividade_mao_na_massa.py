@@ -15,23 +15,6 @@
 
     Cada produto deve ser representado por um dicionário com nome, quantidade e preço.'
 '''
-'''
-    ATIVIDADE prática - Mão na massa
-
-    Problema
-
-    Desenvolver um sistema que permita:
-
-    1 - Inserir produtos em uma lista.
-
-    2 - Remover produtos pelo nome.
-
-    3 - Listar todos os produtos.
-
-    4 - Calcular o valor total do estoque.
-
-    Cada produto deve ser representado por um dicionário com nome, quantidade e preço.'
-'''
 
 produtos = []  
 

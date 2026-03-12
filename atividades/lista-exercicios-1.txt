@@ -1,0 +1,42 @@
+Atividade 1 — Estatísticas de Notas
+Crie um programa que armazene 10 notas de alunos em uma lista.
+O programa deve calcular e exibir:
+média da turma
+maior nota
+menor nota
+lista de notas ordenadas em ordem crescente
+Não utilize a função sort().
+
+Atividade 2 — Busca Sequencial
+Implemente uma função chamada:
+busca_sequencial(lista, valor)
+A função deve percorrer a lista e retornar:
+o índice do elemento encontrado
+-1 caso o valor não esteja presente.
+Não utilize:
+index()
+in
+
+Atividade 3 — Remoção Manual de Elemento
+Implemente uma função que remova um elemento de uma lista sem utilizar métodos prontos.
+Função esperada:
+remover(lista, valor)
+O algoritmo deve:
+localizar o elemento
+deslocar os elementos à direita
+atualizar a lista resultante
+Não utilizar:
+remove()
+pop()
+
+Atividade 4 — Inserção Ordenada em Lista
+Implemente uma função que insira um valor em uma lista mantendo a ordem crescente dos elementos.
+Função esperada:
+inserir_ordenado(lista, valor)
+A função deve:
+encontrar a posição correta do novo elemento
+deslocar os elementos necessários para a direita
+inserir o valor na posição correta
+Não utilizar:
+sort()
+insert()

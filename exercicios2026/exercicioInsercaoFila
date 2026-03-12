@@ -1,0 +1,44 @@
+fila = []
+
+def inserir(nome):
+    fila.append(nome)
+    print("Foi inserido na lista o nome:", nome)
+
+def remover():
+    if len(fila) == 0:
+        print("A fila está vazia")
+        return
+
+    excluido = fila[0]
+
+    for i in range(len(fila) - 1):
+        fila[i] = fila[i + 1]
+
+    fila.pop()
+    print(excluido, "foi removido da fila")
+
+def buscar(nome):
+    for i in range(len(fila)):
+        if fila[i] == nome:
+            print("Cliente encontrado na posição", i)
+            return
+
+    print("Cliente não encontrado na fila")
+
+def exibir():
+    print("Fila atual:")
+    for i in range(len(fila)):
+        print(fila[i])
+
+inserir("Gleice")
+inserir("Wesley")
+inserir("Marilena")
+inserir("Bryan")
+
+exibir()
+
+buscar("Marilena")
+
+remover()
+
+exibir()

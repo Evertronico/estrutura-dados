@@ -13,13 +13,13 @@ def cadastrarProduto(lista):
 
 def procuraCod(lista,valor):
     for i in range(len(lista)):
-       if lista[i].codigo == valor:
+       if lista[i]["cod"] == valor:
            return i
     return -1
 
 def procuraProduto(lista,valor):
     for i in range(len(lista)):
-       if lista[i].produto == valor:
+       if lista[i]["produto"] == valor:
            return i
     return -1
 
@@ -32,8 +32,9 @@ def criar_obj_tarefa():
 
 def saida(codigo, quantidade):
     posicao = procuraCod(produtos,codigo)
-    if produtos[posicao].id >= quantidade:
+    if produtos[posicao]["quantidade"] >= quantidade:
         print('Saida com sucesso')
+        produtos[posicao]["quantidade"] -= quantidade
     else:
         print('Quantidade maior que o estoque')
 
@@ -71,7 +72,7 @@ while (opcao != 0):
         print('='*30)
         nome = input('Nome do produto: ')
         posicao = procuraProduto(produtos, nome)
-        if id >= 0 :
+        if posicao >= 0 :
             print(produtos[posicao])
         else: 
             print('Produto não existe')

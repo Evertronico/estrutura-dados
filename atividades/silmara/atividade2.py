@@ -8,13 +8,17 @@
 # index()
 # in
 
-lista = [13, 67, 973, 0.5, 20, 70, 99]
-qtde_lista = len(lista)
-
 def busca_sequencial(lista, valor):
-    for i in range(qtde_lista):
+    for i in range(len(lista)):
         if lista[i] == valor:
             return i
     return -1
 
-print(busca_sequencial(lista, 973))
+numeros = [13, 67, 973, 0.5, 20, 70, 99]
+alvo = 973
+resultado = busca_sequencial(numeros, alvo)
+
+if resultado != -1:
+    print(f"Valor {alvo} encontrado no índice: {resultado}")
+else:
+    print(f"Valor {alvo} não encontrado.")

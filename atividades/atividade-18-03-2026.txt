@@ -1,0 +1,51 @@
+Orientações:
+Clone o projeto usando o vs code
+Crie um diretório chamado "atividade 2" dentro do caminho atividades -> pasta com seu nome 
+Resolva as 5 questões a seguir e em seguida faça um commit e um push para o projeto
+Certifique-se de criar arquivos somente dentro de sua pasta
+
+Exercício 1 – Cadastro de Alunos com Operações Básicas
+Implemente um sistema para gerenciamento de alunos de uma turma utilizando listas em Python. O sistema deve permitir o controle completo dos alunos cadastrados.
+Requisitos:
+ * Armazenar os alunos em uma lista
+ * Implementar função para adicionar aluno
+ * Implementar função para buscar aluno pelo nome (sem usar in ou index)
+ * Implementar função para remover aluno manualmente (sem remove)
+ * Exibir todos os alunos cadastrados
+
+Exercício 2 – Controle de Estoque com Validação de Regras
+Implemente um sistema de controle de estoque para uma loja. Cada produto deve possuir nome e quantidade disponível.
+Requisitos:
+Utilizar lista de estruturas (dicionário ou lista composta)
+ * Implementar entrada de produto (adicionar ou atualizar quantidade)
+ * Implementar saída de produto com validação de estoque
+ * Impedir retirada maior que a quantidade disponível
+ * Implementar busca de produto pelo nome
+ * Exibir todos os produtos
+
+Exercício 3 – Inserção Ordenada de Dados
+Implemente uma função que insira valores em uma lista mantendo a ordenação crescente, simulando um sistema que organiza automaticamente dados numéricos.
+Requisitos:
+ * Lista deve permanecer ordenada após cada inserção
+ * Encontrar posição correta manualmente
+ * Deslocar elementos sem usar insert()
+ * Não utilizar sort()
+ * Implementar função reutilizável
+
+Exercício 4 – Análise de Desempenho de Vendas
+Implemente um sistema que analise dados de vendas diárias de uma empresa a partir de uma lista de valores numéricos.
+Requisitos:
+ * Calcular média das vendas
+ * Calcular mediana (ordenar manualmente ou por lógica implementada)
+ * Contar quantos valores estão acima da média
+ * Não utilizar bibliotecas externas
+ * Exibir resultados de forma organizada
+
+Exercício 5 – Sistema de Atendimento com Fila
+Implemente um sistema de atendimento para um consultório utilizando lista para simular uma fila de pacientes.
+Requisitos:
+ * Inserir pacientes no final da lista
+ * Remover paciente do início da lista manualmente (sem pop(0))
+ * Implementar função para exibir fila
+ * Controlar caso de fila vazia
+ * Simular múltiplos atendimentos sequenciais

@@ -10,16 +10,26 @@
 # remove()
 # pop()
 
-lista = [20, 45, 88, 751, 0.0, 0.1]
-qtde_lista = len(lista)
-
 def remover(lista, valor):
-    for i in range(qtde_lista):
+    n = len(lista)
+    indice_alvo = -1
+
+    for i in range(n):
         if lista[i] == valor:
-            for j in range(i, qtde_lista - 1):
-                lista[j] = lista[j + 1]
-            del lista[-1]
-            return lista
+            indice_alvo = i
+            break
+    
+    if indice_alvo != -1:
+        for j in range(indice_alvo, n - 1):
+            lista[j] = lista[j + 1]
+        del lista[-1]
+        print(f"Elemento {valor} removido.")
+    else:
+        print(f"Valor {valor} não encontrado para remoção.")
+    
     return lista
 
-print(remover(lista, 45))
+dados = [20, 45, 88, 751, 0.0, 0.1]
+print(f"Lista original: {dados}")
+remover(dados, 45)
+print(f"Lista atualizada: {dados}")

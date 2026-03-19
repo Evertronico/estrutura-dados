@@ -1,0 +1,14 @@
+fila = []
+
+fila.append("joao")
+fila.append("pedro")
+fila.append("carlos")
+
+
+print("Fila inicial: ", fila)
+
+cliente_atendido = fila.pop(0)
+
+print("Cliente antendidos; ", cliente_atendido)
+
+print("Fila Restante: ", fila)

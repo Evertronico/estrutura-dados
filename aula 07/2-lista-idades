@@ -1,0 +1,11 @@
+idades = [25,26,35,18,35,96,32,10,12,17]
+
+maiores = []
+
+for idade in idades:
+    if idades >= 18:
+        maiores.append[idade]
+
+print("Idades: ", idades)
+
+print("Idades maiores 18: ", maiores)

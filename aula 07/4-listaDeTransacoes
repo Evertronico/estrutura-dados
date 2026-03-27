@@ -1,0 +1,10 @@
+transacoes = [120.40,130,50,98.50,-403.20,200.40]
+
+saldo = 0
+
+for valor in transacoes:
+    saldo += valor
+
+print("Transações: ", transacoes)
+
+print("Saldo total: R$", saldo)

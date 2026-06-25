@@ -5,7 +5,7 @@ from estruturas.pilha import Pilha
 
 def menu_principal():
     print('=' * 50)
-    print('||    <<<<<<<<<MANUS PERSONAL MANAGER>>>>>>>>    ||')
+    print('||    <<<<<<<<<<<<<Gestão Pessoal>>>>>>>>>>>>    ||')
     print('||    1) - AGENDA E CONTATOS................:    ||')
     print('||    2) - GESTÃO DE PROJETOS...............:    ||')
     print('||    3) - GESTÃO FINANCEIRA................:    ||')
